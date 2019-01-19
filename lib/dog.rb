@@ -26,7 +26,7 @@ class Dog
   end
 
   def self.create(name:, breed:)
-    instance = self.new(name: "#{name}", breed: "#{breed}")
+    instance = self.new(name: name, breed: breed)
     instance.save
     instance
   end
