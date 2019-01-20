@@ -66,6 +66,8 @@ class Dog
     if !dog.empty?
       dog_data = dog[0]
       dog = Dog.new(dog_data[1], dog_data[2], dog_data[0])
+    elsif !dog.empty?
+      self.find_by_name(name)
     else
       dog = self.create(name: name, breed: breed)
     end
